@@ -7,7 +7,7 @@ import AuthRouter from "./Routes/AuthRouter.js"
 import ChatRouter from './Routes/ChatRouter.js';
 import connectDB from './Models/db.js'
 const app = express();
-// const Port = process.env.PORT;
+const Port = process.env.PORT;
 
 connectDB();
 
@@ -17,4 +17,4 @@ app.use(cors());
 app.use('/', AuthRouter);
 app.use('/', ChatRouter);
 
-// app.listen(Port);
+app.listen(Port);
