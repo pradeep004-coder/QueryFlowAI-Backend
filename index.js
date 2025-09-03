@@ -14,7 +14,7 @@ connectDB();
 app.use(express.json()); // replaces body-parser.json()
 app.use(express.urlencoded({ extended: true })); // replaces body-parser.urlencoded()
 app.use(cors({
-  origin: "https://query-flow-ai-frontend.vercel.app",
+  origin: "https://queryflow-ochre.vercel.app/",
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true // if you're sending cookies/JWT in headers
 }));
